@@ -134,10 +134,12 @@ img {
   font-weight: 500;
   line-height: 1.2;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .section-list-item {
   display: block;
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .header-nav-logo {
@@ -177,6 +179,7 @@ img {
   color: #2e2f42;
   text-decoration: none;
   display: inline-block;
+  padding: 24px 0;
 }
 
 .header-nav-list-link:hover,
@@ -245,6 +248,7 @@ img {
 .section-two {
   background-color: #f4f4fd;
   padding: 96px 0;
+  padding: 120px 0;
 }
 
 .section-three {
@@ -266,6 +270,19 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   padding-bottom: 72px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
 }
 
 .section-list-item-text {
