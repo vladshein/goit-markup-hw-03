@@ -1,3 +1,23 @@
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  /* Colors */
+  /* --cl-body: 250 250 250;
+  --cl-primary: 17 17 17;
+  --cl-secondary: 76 76 76;
+  --cl-accent: 253 146 34;
+  --cl-light: 250 250 250;
+  --cl-dark: 30 24 35;
+  --cl-white: 255 255 255;
+  --cl-beige: 252 241 224; */
+
+  /* Others */
+  --indent-col: 32px;
+  --indent-row: var(--indent-col);
+  --items: 3;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
@@ -6,12 +26,83 @@ body {
   line-height: 1.5;
 }
 
-ul {
-  list-style: none;
+/* #region Base */
+/* Reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* #endregion */
+
+/* #region containers */
+.container {
+  width: 1448px;
+  padding: 0 4px;
+  margin: 0 auto;
+}
+
+.section-container {
+  /* display: flex;
+  align-items: center; */
+  width: 1440px;
+}
+
+.footer-container {
+  /* display: flex;
+  align-items: center; */
+  width: 1440px;
+}
+/* #endregion containers */
+
+/* #region-header */
+.header {
+  padding-bottom: 96px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-nav {
+  display: flex;
+  margin-right: auto;
+  padding: 24px;
 }
 
 .header-address {
   font-style: normal;
+  margin-right: 156px;
 }
 
 .header-address-list-link {
@@ -25,9 +116,12 @@ ul {
   color: #404bbf;
 }
 
-button {
-  font-family: inherit;
-  cursor: pointer;
+.section-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-left: 156px;
+  margin-right: 156px;
 }
 
 .section-list-item-header {
@@ -38,8 +132,10 @@ button {
   color: #2e2f42;
 }
 
-/* .header-nav {
-} */
+.section-list-item {
+  display: block;
+}
+
 .header-nav-logo {
   color: #4d5ae5;
   font-family: 'Raleway', sans-serif;
@@ -49,10 +145,22 @@ button {
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
+  margin-right: 76px;
+  margin-left: 156px;
+  display: inline-flex;
 }
 
 .header-nav-logo-span {
   color: #2e2f42;
+}
+
+.header-nav-list {
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  text-decoration: none;
+  color: #2e2f42;
+  display: flex;
+  gap: 40px;
 }
 
 .header-nav-list-studio {
@@ -61,16 +169,10 @@ button {
   text-decoration: none;
 }
 
-.header-nav-list {
-  letter-spacing: 0.02em;
-  font-weight: 500;
-  text-decoration: none;
-  color: #2e2f42;
-}
-
 .header-nav-list-link {
   color: #2e2f42;
   text-decoration: none;
+  display: inline-block;
 }
 
 .header-nav-list-link:hover,
@@ -82,10 +184,18 @@ button {
   letter-spacing: 0.02em;
   font-weight: 400;
   text-decoration: none;
+  display: flex;
+  gap: 40px;
 }
+/* #endregion header */
 
+/* #region-hero */
 .hero {
   background-color: #2e2f42;
+}
+
+.hero-container {
+  width: 1440px;
 }
 
 .hero-header {
@@ -95,6 +205,7 @@ button {
   letter-spacing: 0.02em;
   font-weight: bold;
   text-align: center;
+  padding: 188px 472px 292px 472px;
 }
 
 .hero-button {
@@ -103,19 +214,37 @@ button {
   font-weight: 500;
   letter-spacing: 0.04em;
   line-height: 1.5;
+  padding: 16px 32px;
+  margin-left: 636px;
+  margin-right: 636px;
+  margin-bottom: 204px;
+  text-align: center;
 }
 
 .hero-button:hover,
 .hero-button:focus {
   background-color: #404bbf;
 }
+/* #endregion hero */
+.section-one {
+  padding: 96px 0;
+}
 
+/* #region section-two our team */
 .section-two {
   background-color: #f4f4fd;
+  padding: 96px 0;
+}
+
+.section-three {
+  padding: 96px 0;
 }
 
 .section-two-list-item {
   background-color: #ffffff;
+  display: block;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 .section-header {
@@ -125,6 +254,7 @@ button {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-bottom: 72px;
 }
 
 .section-list-item-text {
@@ -132,7 +262,9 @@ button {
   letter-spacing: 0.02em;
   font-weight: 400;
 }
+/* #endregion section-two our team */
 
+/* #region footer */
 .footer {
   background-color: #2e2f42;
 }
@@ -156,3 +288,4 @@ button {
   color: #f4f4fd;
   letter-spacing: 0.02em;
 }
+/* #endregion footer */
