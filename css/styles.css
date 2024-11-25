@@ -257,20 +257,26 @@ img {
   background-color: #404bbf;
 }
 /* #endregion hero */
-
-/* #region section-two our team */
 .section-one {
   padding: 120px 0;
 }
+
+.section-header {
+  color: #2e2f42;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  padding-bottom: 72px;
+}
+
+/* #region section-two our team */
 
 .section-two {
   background-color: #f4f4fd;
   padding: 96px 0;
   padding: 120px 0;
-}
-
-.section-three {
-  padding: 96px 0;
 }
 
 .section-two-list-item {
@@ -284,16 +290,6 @@ img {
 .section-two-person {
   padding: 32px 0;
 }
-.section-header {
-  color: #2e2f42;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  padding-bottom: 72px;
-}
-
 .section-header-two {
   color: #2e2f42;
   font-size: 36px;
@@ -312,6 +308,32 @@ img {
   text-align: center;
 }
 /* #endregion section-two our team */
+
+/* #region section three */
+.section-three {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section-header-three {
+  margin-bottom: 72px;
+}
+
+.section-list-three {
+  flex-wrap: wrap;
+  row-gap: 48px;
+}
+
+.section-three-list-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.section-three-product {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+/* #endregion section three */
 
 /* #region footer */
 .footer {
