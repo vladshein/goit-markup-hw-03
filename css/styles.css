@@ -137,11 +137,15 @@ img {
   margin-bottom: 8px;
 }
 
-.section-list-item {
+.section-list-item-first {
   display: block;
-  width: calc((100% - 3 * 24px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 
+.section-list-item {
+  display: block;
+  width: calc((100% - 72px) / 4);
+}
 .header-nav-logo {
   color: #4d5ae5;
   font-family: 'Raleway', sans-serif;
@@ -241,7 +245,7 @@ img {
 }
 /* #endregion hero */
 .section-one {
-  padding: 96px 0;
+  padding: 120px 0;
 }
 
 /* #region section-two our team */
