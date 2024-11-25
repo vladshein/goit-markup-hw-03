@@ -76,27 +76,26 @@ img {
 
 /* #region containers */
 .container {
-  width: 1448px;
-  padding: 0 4px;
+  width: 1158px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
 .section-container {
   /* display: flex;
   align-items: center; */
-  width: 1440px;
+  /* width: 1440px; */
 }
 
 .footer-container {
   /* display: flex;
   align-items: center; */
-  width: 1440px;
+  /* width: 1440px; */
 }
 /* #endregion containers */
 
 /* #region-header */
 .header {
-  padding-bottom: 96px;
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -111,13 +110,11 @@ img {
 .header-nav {
   display: flex;
   margin-right: auto;
-  padding: 24px;
   align-items: center;
 }
 
 .header-address {
   font-style: normal;
-  margin-right: 156px;
 }
 
 .header-address-list-link {
@@ -136,11 +133,18 @@ img {
   display: flex;
   align-items: center;
   gap: 24px;
-  margin-left: 156px;
-  margin-right: 156px;
 }
 
 .section-list-item-header {
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.section-two-item-header {
   font-size: 20px;
   letter-spacing: 0.02em;
   font-weight: 500;
@@ -169,7 +173,6 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   margin-right: 76px;
-  margin-left: 156px;
   display: inline-flex;
 }
 
@@ -220,7 +223,6 @@ img {
 }
 
 .hero-container {
-  width: 1440px;
 }
 
 .hero-header {
@@ -232,6 +234,9 @@ img {
   text-align: center;
   /* padding: 188px 472px 292px 472px; */
   max-width: 496px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 48px;
 }
 
 .hero-button {
@@ -240,10 +245,8 @@ img {
   font-weight: 500;
   letter-spacing: 0.04em;
   line-height: 1.5;
-  padding: 16px 32px;
-  margin-left: 636px;
-  margin-right: 636px;
-  margin-bottom: 204px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   display: block;
   min-width: 169px;
@@ -268,7 +271,6 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-bottom: 72px;
 }
 
 /* #region section-two our team */
@@ -297,11 +299,16 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-bottom: 72px;
   margin-bottom: 72px;
 }
 
 .section-list-item-text {
+  color: #434455;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+
+.section-two-item-text {
   color: #434455;
   letter-spacing: 0.02em;
   font-weight: 400;
@@ -361,5 +368,6 @@ img {
 .footer-text {
   color: #f4f4fd;
   letter-spacing: 0.02em;
+  max-width: 264px;
 }
 /* #endregion footer */
